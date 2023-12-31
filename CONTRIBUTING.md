@@ -137,7 +137,7 @@ npm ci
 
 We can start the frontend dev server and the backend dev server in one command.
 
-Port `3000` and port `3001` will be used.
+Port `3000` and port `3002` will be used.
 
 ```bash
 npm run dev
@@ -152,7 +152,7 @@ npm run start-server-dev
 
 ## Backend Server
 
-It binds to `0.0.0.0:3001` by default.
+It binds to `0.0.0.0:3002` by default.
 
 It is mainly a socket.io app + express.js.
 

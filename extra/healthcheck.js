@@ -30,7 +30,7 @@ if (!hostname && !FBSD) {
     hostname = process.env.HOST;
 }
 
-const port = parseInt(process.env.UPTIME_KUMA_PORT || process.env.PORT || 3001);
+const port = parseInt(process.env.UPTIME_KUMA_PORT || process.env.PORT || 3002);
 
 let options = {
     host: hostname || "127.0.0.1",

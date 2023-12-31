@@ -7,7 +7,7 @@ const env = process.env.NODE_ENV || "production";
 if (env === "development" && isDevContainer()) {
     axios.defaults.baseURL = location.protocol + "//" + getDevContainerServerHostname();
 } else if (env === "development" || localStorage.dev === "dev") {
-    axios.defaults.baseURL = location.protocol + "//" + location.hostname + ":3001";
+    axios.defaults.baseURL = location.protocol + "//" + location.hostname + ":3002";
 }
 
 export default {

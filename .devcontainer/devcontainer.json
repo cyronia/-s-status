@@ -8,7 +8,7 @@
     "postAttachCommand": {
         "frontend-dev": "npm run start-frontend-devcontainer",
         "server-dev": "npm run start-server-dev",
-        "open-port": "gh codespace ports visibility 3001:public -c $CODESPACE_NAME"
+        "open-port": "gh codespace ports visibility 3002:public -c $CODESPACE_NAME"
     },
     "customizations": {
         "vscode": {
@@ -19,5 +19,5 @@
 			]
         }
     },
-    "forwardPorts": [3000, 3001]
+    "forwardPorts": [3000, 3002]
 }

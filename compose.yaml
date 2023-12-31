@@ -5,5 +5,5 @@ services:
       - ./data:/app/data
     ports:
       # <Host Port>:<Container Port>
-      - 3001:3001
+      - 3002:3002
     restart: unless-stopped
