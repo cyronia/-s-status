@@ -6,8 +6,8 @@
 
 Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 
-<a target="_blank" href="https://github.com/louislam/uptime-kuma"><img src="https://img.shields.io/github/stars/louislam/uptime-kuma" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/pulls/louislam/uptime-kuma" /></a> <a target="_blank" href="https://hub.docker.com/r/louislam/uptime-kuma"><img src="https://img.shields.io/docker/v/louislam/uptime-kuma/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/louislam/uptime-kuma"><img src="https://img.shields.io/github/last-commit/louislam/uptime-kuma" /></a>  <a target="_blank" href="https://opencollective.com/uptime-kuma"><img src="https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" /></a>
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/louislam?label=GitHub%20Sponsors)](https://github.com/sponsors/louislam) <a href="https://weblate.kuma.pet/projects/uptime-kuma/uptime-kuma/">
+<a target="_blank" href="https://github.com/cyronia/-s-status"><img src="https://img.shields.io/github/stars/cyronia/-s-status" /></a> <a target="_blank" href="https://hub.docker.com/r/cyronia/-s-status"><img src="https://img.shields.io/docker/pulls/cyronia/-s-status" /></a> <a target="_blank" href="https://hub.docker.com/r/cyronia/-s-status"><img src="https://img.shields.io/docker/v/cyronia/-s-status/latest?label=docker%20image%20ver." /></a> <a target="_blank" href="https://github.com/cyronia/-s-status"><img src="https://img.shields.io/github/last-commit/cyronia/-s-status" /></a>  <a target="_blank" href="https://opencollective.com/uptime-kuma"><img src="https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" /></a>
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/cyronia?label=GitHub%20Sponsors)](https://github.com/sponsors/cyronia) <a href="https://weblate.kuma.pet/projects/uptime-kuma/uptime-kuma/">
 <img src="https://weblate.kuma.pet/widgets/uptime-kuma/-/svg-badge.svg" alt="Translation status" />
 </a>
 
@@ -17,7 +17,7 @@ Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 
 Try it!
 
-- Tokyo Demo Server: https://demo.uptime.kuma.pet (Sponsored by [Uptime Kuma Sponsors](https://github.com/louislam/uptime-kuma#%EF%B8%8F-sponsors))
+- Tokyo Demo Server: https://demo.uptime.kuma.pet (Sponsored by [Uptime Kuma Sponsors](https://github.com/cyronia/-s-status#%EF%B8%8F-sponsors))
 
 It is a temporary live demo, all data will be deleted after 10 minutes. Use the one that is closer to you, but I suggest that you should install and try it out for the best demo experience.
 
@@ -25,9 +25,9 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Use the 
 
 - Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Ping / DNS Record / Push / Steam Game Server / Docker Containers
 - Fancy, Reactive, Fast UI/UX
-- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and [90+ notification services, click here for the full list](https://github.com/louislam/uptime-kuma/tree/master/src/components/notifications)
+- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and [90+ notification services, click here for the full list](https://github.com/cyronia/-s-status/tree/master/src/components/notifications)
 - 20-second intervals
-- [Multi Languages](https://github.com/louislam/uptime-kuma/tree/master/src/lang)
+- [Multi Languages](https://github.com/cyronia/-s-status/tree/master/src/lang)
 - Multiple status pages
 - Map status pages to specific domains
 - Ping chart
@@ -40,7 +40,7 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Use the 
 ### 🐳 Docker
 
 ```bash
-docker run -d --restart=always -p 3002:3002 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=always -p 3002:3002 -v uptime-kuma:/app/data --name uptime-kuma cyronia/-s-status:1
 ```
 
 Uptime Kuma is now running on http://localhost:3002
@@ -65,8 +65,8 @@ Requirements:
 # Update your npm
 npm install npm@9 -g
 
-git clone https://github.com/louislam/uptime-kuma.git
-cd uptime-kuma
+git clone https://github.com/cyronia/-s-status.git
+cd -s-status
 npm run setup
 
 # Option 1. Try it
@@ -77,7 +77,7 @@ node server/server.js
 npm install pm2 -g && pm2 install pm2-logrotate
 
 # Start Server
-pm2 start server/server.js --name uptime-kuma
+pm2 start server/server.js --name -s-status
 ```
 
 Uptime Kuma is now running on http://localhost:3002
@@ -96,19 +96,19 @@ pm2 save && pm2 startup
 
 If you need more options or need to browse via a reverse proxy, please read:
 
-https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install
+https://github.com/cyronia/-s-status/wiki/%F0%9F%94%A7-How-to-Install
 
 ## 🆙 How to Update
 
 Please read:
 
-https://github.com/louislam/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update
+https://github.com/cyronia/-s-status/wiki/%F0%9F%86%99-How-to-Update
 
 ## 🆕 What's Next?
 
 I will assign requests/issues to the next milestone.
 
-https://github.com/louislam/uptime-kuma/milestones
+https://github.com/cyronia/-s-status/milestones
 
 ## ❤️ Sponsors
 
@@ -128,11 +128,11 @@ Status Page:
 
 Settings Page:
 
-<img src="https://louislam.net/uptimekuma/2.jpg" width="400" alt="" />
+<img src="https://cyronia.net/uptimekuma/2.jpg" width="400" alt="" />
 
 Telegram Notification Sample:
 
-<img src="https://louislam.net/uptimekuma/3.jpg" width="400" alt="" />
+<img src="https://cyronia.net/uptimekuma/3.jpg" width="400" alt="" />
 
 ## Motivation
 
@@ -151,10 +151,10 @@ If you love this project, please consider giving it a ⭐.
 
 I recommend using Google, GitHub Issues, or Uptime Kuma's subreddit for finding answers to your question. If you cannot find the information you need, feel free to ask:
 
-- [GitHub Issues](https://github.com/louislam/uptime-kuma/issues)
+- [GitHub Issues](https://github.com/cyronia/-s-status/issues)
 - [Subreddit (r/UptimeKuma)](https://www.reddit.com/r/UptimeKuma/)
 
-My Reddit account: [u/louislamlam](https://reddit.com/u/louislamlam)
+My Reddit account: [u/cyronialam](https://reddit.com/u/cyronialam)
 You can mention me if you ask a question on the subreddit.
 
 ## Contributions
@@ -162,26 +162,26 @@ You can mention me if you ask a question on the subreddit.
 ### Create Pull Requests
 
 We DO NOT accept all types of pull requests and do not want to waste your time. Please be sure that you have read and follow pull request rules:
-[CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma](https://github.com/louislam/uptime-kuma/blob/master/CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma)
+[CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma](https://github.com/cyronia/-s-status/blob/master/CONTRIBUTING.md#can-i-create-a-pull-request-for-uptime-kuma)
 
 ### Test Pull Requests
 
 There are a lot of pull requests right now, but I don't have time to test them all.
 
 If you want to help, you can check this:
-https://github.com/louislam/uptime-kuma/wiki/Test-Pull-Requests
+https://github.com/cyronia/-s-status/wiki/Test-Pull-Requests
 
 ### Test Beta Version
 
-Check out the latest beta release here: https://github.com/louislam/uptime-kuma/releases
+Check out the latest beta release here: https://github.com/cyronia/-s-status/releases
 
 ### Bug Reports / Feature Requests
 
-If you want to report a bug or request a new feature, feel free to open a [new issue](https://github.com/louislam/uptime-kuma/issues).
+If you want to report a bug or request a new feature, feel free to open a [new issue](https://github.com/cyronia/-s-status/issues).
 
 ### Translations
 
-If you want to translate Uptime Kuma into your language, please visit [Weblate Readme](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+If you want to translate Uptime Kuma into your language, please visit [Weblate Readme](https://github.com/cyronia/-s-status/blob/master/src/lang/README.md).
 
 ### Spelling & Grammar
 

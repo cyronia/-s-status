@@ -3,7 +3,7 @@ const { parseTimeObject, parseTimeFromTimeObject, log } = require("../../src/uti
 const { R } = require("redbean-node");
 const dayjs = require("dayjs");
 const Cron = require("croner");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const apicache = require("../modules/apicache");
 
 class Maintenance extends BeanModel {

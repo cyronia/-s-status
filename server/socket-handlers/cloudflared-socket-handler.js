@@ -1,6 +1,6 @@
 const { checkLogin, setSetting, setting, doubleCheckPassword } = require("../util-server");
 const { CloudflaredTunnel } = require("node-cloudflared-tunnel");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const { log } = require("../../src/util");
 const io = UptimeKumaServer.getInstance().io;
 

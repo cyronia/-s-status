@@ -1,7 +1,7 @@
 const { BeanModel } = require("redbean-node/dist/bean-model");
 const { R } = require("redbean-node");
 const cheerio = require("cheerio");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const jsesc = require("jsesc");
 const googleAnalytics = require("../google-analytics");
 
@@ -74,7 +74,7 @@ class StatusPage extends BeanModel {
         head.append(ogDescription);
 
         // Preload data
-        // Add jsesc, fix https://github.com/louislam/uptime-kuma/issues/2186
+        // Add jsesc, fix https://github.com/cyronia/-s-status/issues/2186
         const escapedJSONObject = jsesc(await StatusPage.getStatusPageData(statusPage), {
             "isScriptContext": true
         });

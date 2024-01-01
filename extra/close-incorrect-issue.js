@@ -9,8 +9,8 @@ const github = require("@actions/github");
         const client = github.getOctokit(token).rest;
 
         const issue = {
-            owner: "louislam",
-            repo: "uptime-kuma",
+            owner: "cyronia",
+            repo: "-s-status",
             number: issueNumber,
         };
 

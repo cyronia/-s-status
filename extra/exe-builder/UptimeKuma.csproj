@@ -7,7 +7,7 @@
         <ProjectGuid>{2DB53988-1D93-4AC0-90C4-96ADEAAC5C04}</ProjectGuid>
         <OutputType>WinExe</OutputType>
         <RootNamespace>UptimeKuma</RootNamespace>
-        <AssemblyName>uptime-kuma</AssemblyName>
+        <AssemblyName>-s-status</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -38,7 +38,7 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
     <PropertyGroup>
-        <PostBuildEvent>COPY "$(SolutionDir)bin\Debug\uptime-kuma.exe" "%UserProfile%\Desktop\uptime-kuma-win64\"</PostBuildEvent>
+        <PostBuildEvent>COPY "$(SolutionDir)bin\Debug\-s-status.exe" "%UserProfile%\Desktop\-s-status-win64\"</PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">

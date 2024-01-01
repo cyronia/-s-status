@@ -900,7 +900,7 @@
     "Remote Browser not found!": "Remote Browser nicht gefunden!",
     "remoteBrowsersDescription": "Remote Browser sind eine Alternative zur lokalen Ausführung von Chromium. Einrichtung mit einem Dienst wie browserless.io oder verbinde mit deinem Eigenen.",
     "self-hosted container": "Selbstverwalteter Container",
-    "remoteBrowserToggle": "Standardmässig läuft Chromium innerhalb des Uptime-Kuma Containers. Du kannst einen Remote-Browser verwenden, indem du diesen Schalter umlegst.",
+    "remoteBrowserToggle": "Standardmässig läuft Chromium innerhalb des -s-status Containers. Du kannst einen Remote-Browser verwenden, indem du diesen Schalter umlegst.",
     "useRemoteBrowser": "Verwende einen Remote Browser",
     "deleteRemoteBrowserMessage": "Bist du sicher, dass du diesen Remote Browser für alle Monitore löschen möchtest?",
     "Remove the expiry notification": "Tag für Auslaufbenachrichtigung löschen",

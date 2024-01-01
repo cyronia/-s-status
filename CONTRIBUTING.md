@@ -39,7 +39,7 @@ Here are some references:
 - Bug fix
 - Security fix
 - Adding notification providers
-- Adding new language files (see [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md))
+- Adding new language files (see [these instructions](https://github.com/cyronia/-s-status/blob/master/src/lang/README.md))
 - Adding new language keys: `$t("...")`
 
 ### ⚠️ Discussion required
@@ -49,7 +49,7 @@ Here are some references:
 
 ### ❌ Won't be merged
 
-- A dedicated PR for translating existing languages (see [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md))
+- A dedicated PR for translating existing languages (see [these instructions](https://github.com/cyronia/-s-status/blob/master/src/lang/README.md))
 - Do not pass the auto-test
 - Any breaking changes
 - Duplicated pull requests
@@ -62,9 +62,9 @@ Here are some references:
 
 The above cases may not cover all possible situations.
 
-I ([@louislam](https://github.com/louislam)) have the final say. If your pull request does not meet my expectations, I will reject it, no matter how much time you spent on it. Therefore, it is essential to have a discussion beforehand.
+I ([@cyronia](https://github.com/cyronia)) have the final say. If your pull request does not meet my expectations, I will reject it, no matter how much time you spent on it. Therefore, it is essential to have a discussion beforehand.
 
-I will assign your pull request to a [milestone](https://github.com/louislam/uptime-kuma/milestones), if I plan to review and merge it.
+I will assign your pull request to a [milestone](https://github.com/cyronia/-s-status/milestones), if I plan to review and merge it.
 
 Also, please don't rush or ask for an ETA, because I have to understand the pull request, make sure it is no breaking changes and stick to my vision of this project, especially for large pull requests.
 
@@ -77,8 +77,8 @@ Before deep into coding, discussion first is preferred. Creating an empty pull r
 3. Create a new branch
 4. Create an empty commit: `git commit -m "<YOUR TASK NAME>" --allow-empty`
 5. Push to your fork repo
-6. Prepare a pull request: https://github.com/louislam/uptime-kuma/compare
-7. Write a proper description. You can mention @louislam in it, so @louislam will get the notification.
+6. Prepare a pull request: https://github.com/cyronia/-s-status/compare
+7. Write a proper description. You can mention @cyronia in it, so @cyronia will get the notification.
 8. Create your pull request as a Draft
 9. Wait for the discussion
 
@@ -117,7 +117,7 @@ I personally do not like something that requires so many configurations before y
 
 If you don't want to setup an local environment, you can now develop on GitHub Codespaces, read more:
 
-https://github.com/louislam/uptime-kuma/tree/master/.devcontainer
+https://github.com/cyronia/-s-status/tree/master/.devcontainer
 
 ## Git Branches
 
@@ -172,7 +172,7 @@ express.js is used for:
 - routers/ (Express Routers)
 - socket-handler (Socket.io Handlers)
 - server.js (Server entry point)
-- uptime-kuma-server.js (UptimeKumaServer class, main logic should be here, but some still in `server.js`)
+- -s-status-server.js (UptimeKumaServer class, main logic should be here, but some still in `server.js`)
 
 ## Frontend Dev Server
 
@@ -200,7 +200,7 @@ The data and socket logic are in `src/mixins/socket.js`.
 
 ## Database Migration
 
-See: https://github.com/louislam/uptime-kuma/tree/master/db/knex_migrations
+See: https://github.com/cyronia/-s-status/tree/master/db/knex_migrations
 
 ## Unit Test
 
@@ -235,7 +235,7 @@ Please add **all** the strings which are translatable to `src/lang/en.json` (if 
 **Don't include any other languages in your initial pull request** (even if this is your mother tongue), to avoid merge-conflicts between weblate and `master`.
 The translations can then (after merging a PR into `master`) be translated by awesome people donating their language skills.
 
-If you want to help by translating Uptime Kuma into your language, please visit the [instructions on how to translate using weblate](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+If you want to help by translating Uptime Kuma into your language, please visit the [instructions on how to translate using weblate](https://github.com/cyronia/-s-status/blob/master/src/lang/README.md).
 
 ## Spelling & Grammar
 
@@ -246,7 +246,7 @@ My mother language is not English and my grammar is not that great.
 
 Since there is no way to make a pull request to the wiki, I have set up another repo to do that.
 
-https://github.com/louislam/uptime-kuma-wiki
+https://github.com/cyronia/-s-status-wiki
 
 ## Docker
 
@@ -287,7 +287,7 @@ https://github.com/louislam/uptime-kuma-wiki
 ## Maintainer
 
 Check the latest issues and pull requests:
-https://github.com/louislam/uptime-kuma/issues?q=sort%3Aupdated-desc
+https://github.com/cyronia/-s-status/issues?q=sort%3Aupdated-desc
 
 ### Release Procedures
 
@@ -303,7 +303,7 @@ https://github.com/louislam/uptime-kuma/issues?q=sort%3Aupdated-desc
 
 Checking:
 
-- Check all tags is fine on https://hub.docker.com/r/louislam/uptime-kuma/tags
+- Check all tags is fine on https://hub.docker.com/r/cyronia/-s-status/tags
 - Try the Docker image with tag 1.X.X (Clean install / amd64 / arm64 / armv7)
 - Try clean installation with Node.js
 
@@ -321,9 +321,9 @@ Checking:
 #### Setup Repo
 
 ```bash
-git clone https://github.com/louislam/uptime-kuma-wiki.git
-cd uptime-kuma-wiki
-git remote add production https://github.com/louislam/uptime-kuma.wiki.git
+git clone https://github.com/cyronia/-s-status-wiki.git
+cd -s-status-wiki
+git remote add production https://github.com/cyronia/-s-status.wiki.git
 ```
 
 #### Push to Production Wiki

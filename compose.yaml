@@ -1,6 +1,6 @@
 services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:1
+  -s-status:
+    image: cyronia/-s-status:1
     volumes:
       - ./data:/app/data
     ports:

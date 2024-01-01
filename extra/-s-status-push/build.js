@@ -9,15 +9,15 @@ if (!platform) {
 const supportedPlatforms = [
     {
         name: "linux/amd64",
-        bin: "./build/uptime-kuma-push-amd64"
+        bin: "./build/-s-status-push-amd64"
     },
     {
         name: "linux/arm64",
-        bin: "./build/uptime-kuma-push-arm64"
+        bin: "./build/-s-status-push-arm64"
     },
     {
         name: "linux/arm/v7",
-        bin: "./build/uptime-kuma-push-armv7"
+        bin: "./build/-s-status-push-armv7"
     }
 ];
 
@@ -39,7 +39,7 @@ if (platformObj) {
         process.exit(1);
     }
 
-    fs.renameSync(filename, "./uptime-kuma-push");
+    fs.renameSync(filename, "./-s-status-push");
     process.exit(0);
 } else {
     console.error("Unsupported platform: " + platform);

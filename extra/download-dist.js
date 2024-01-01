@@ -9,7 +9,7 @@ const version = packageJSON.version;
 
 const filename = "dist.tar.gz";
 
-const url = `https://github.com/louislam/uptime-kuma/releases/download/${version}/${filename}`;
+const url = `https://github.com/cyronia/-s-status/releases/download/${version}/${filename}`;
 download(url);
 
 /**

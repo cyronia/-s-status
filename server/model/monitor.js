@@ -14,7 +14,7 @@ const { Proxy } = require("../proxy");
 const { demoMode } = require("../config");
 const version = require("../../package.json").version;
 const apicache = require("../modules/apicache");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const { DockerHost } = require("../docker");
 const Gamedig = require("gamedig");
 const jsonata = require("jsonata");
@@ -373,7 +373,7 @@ class Monitor extends BeanModel {
             }
 
             // Runtime patch timeout if it is 0
-            // See https://github.com/louislam/uptime-kuma/pull/3961#issuecomment-1804149144
+            // See https://github.com/cyronia/-s-status/pull/3961#issuecomment-1804149144
             if (!this.timeout || this.timeout <= 0) {
                 this.timeout = this.interval * 1000 * 0.8;
             }
@@ -875,7 +875,7 @@ class Monitor extends BeanModel {
                         {
                             allowAutoTopicCreation: this.kafkaProducerAllowAutoTopicCreation,
                             ssl: this.kafkaProducerSsl,
-                            clientId: `Uptime-Kuma/${version}`,
+                            clientId: `-s-status/${version}`,
                             interval: this.interval,
                         },
                         JSON.parse(this.kafkaProducerSaslOptions),
@@ -1020,7 +1020,7 @@ class Monitor extends BeanModel {
             } catch (e) {
                 console.trace(e);
                 UptimeKumaServer.errorLog(e, false);
-                log.error("monitor", "Please report to https://github.com/louislam/uptime-kuma/issues");
+                log.error("monitor", "Please report to https://github.com/cyronia/-s-status/issues");
 
                 if (! this.isStop) {
                     log.info("monitor", "Try to restart the monitor");

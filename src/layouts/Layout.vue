@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 {{ $root.connectionErrorMsg }}
                 <div v-if="$root.showReverseProxyGuide">
-                    {{ $t("Using a Reverse Proxy?") }} <a href="https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy" target="_blank">{{ $t("Check how to config it for WebSocket") }}</a>
+                    {{ $t("Using a Reverse Proxy?") }} <a href="https://github.com/cyronia/-s-status/wiki/Reverse-Proxy" target="_blank">{{ $t("Check how to config it for WebSocket") }}</a>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@
                 <span class="fs-4 title">{{ $t("Uptime Kuma") }}</span>
             </router-link>
 
-            <a v-if="hasNewVersion" target="_blank" href="https://github.com/louislam/uptime-kuma/releases" class="btn btn-info me-3">
+            <a v-if="hasNewVersion" target="_blank" href="https://github.com/cyronia/-s-status/releases" class="btn btn-info me-3">
                 <font-awesome-icon icon="arrow-alt-circle-up" /> {{ $t("New Update") }}
             </a>
 
@@ -64,7 +64,7 @@
                             </li>
 
                             <li>
-                                <a href="https://github.com/louislam/uptime-kuma/wiki" class="dropdown-item" target="_blank">
+                                <a href="https://github.com/cyronia/-s-status/wiki" class="dropdown-item" target="_blank">
                                     <font-awesome-icon icon="info-circle" /> {{ $t("Help") }}
                                 </a>
                             </li>

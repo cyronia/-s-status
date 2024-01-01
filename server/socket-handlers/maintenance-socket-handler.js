@@ -2,7 +2,7 @@ const { checkLogin } = require("../util-server");
 const { log } = require("../../src/util");
 const { R } = require("redbean-node");
 const apicache = require("../modules/apicache");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const Maintenance = require("../model/maintenance");
 const server = UptimeKumaServer.getInstance();
 

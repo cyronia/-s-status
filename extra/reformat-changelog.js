@@ -1,6 +1,6 @@
 // Generate on GitHub
 const input = `
-* Add Korean translation by @Alanimdeo in https://github.com/louislam/dockge/pull/86
+* Add Korean translation by @Alanimdeo in https://github.com/cyronia/dockge/pull/86
 `;
 
 const template = `

@@ -6,7 +6,7 @@ const ImageDataURI = require("../image-data-uri");
 const Database = require("../database");
 const apicache = require("../modules/apicache");
 const StatusPage = require("../model/status_page");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 
 /**
  * Socket handlers for status page

@@ -1,6 +1,6 @@
 let express = require("express");
 const apicache = require("../modules/apicache");
-const { UptimeKumaServer } = require("../uptime-kuma-server");
+const { UptimeKumaServer } = require("../-s-status-server");
 const StatusPage = require("../model/status_page");
 const { allowDevAllOrigin, sendHttpError } = require("../util-server");
 const { R } = require("redbean-node");

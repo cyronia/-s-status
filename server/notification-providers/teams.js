@@ -79,7 +79,7 @@ class Teams extends NotificationProvider {
             sections: [
                 {
                     activityImage:
-                        "https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.png",
+                        "https://raw.githubusercontent.com/cyronia/-s-status/master/public/icon.png",
                     activityTitle: "**Uptime Kuma**",
                 },
                 {

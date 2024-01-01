@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  uptime-kuma:
-    container_name: uptime-kuma-dev
-    image: louislam/uptime-kuma:nightly2
+  -s-status:
+    container_name: -s-status-dev
+    image: cyronia/-s-status:nightly2
     volumes:
       #- ./data:/app/data
       - ../server:/app/server

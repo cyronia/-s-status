@@ -13,7 +13,7 @@ lines = lines.filter((line) => line !== "");
 lines = [ ...new Set(lines) ];
 
 // Remove @weblate and @UptimeKumaBot
-lines = lines.filter((line) => line !== "@weblate" && line !== "@UptimeKumaBot" && line !== "@louislam");
+lines = lines.filter((line) => line !== "@weblate" && line !== "@UptimeKumaBot" && line !== "@cyronia");
 
 // Sort the lines
 lines = lines.sort();
